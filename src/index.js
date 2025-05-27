@@ -156,7 +156,6 @@ async function handleRequest(request, env) {
       </head><body>
         <div id="container">
           <header>
-            <div class="org-name">jdores.xyz</div>
             <h1 class="title">${titleText}</h1>
           </header>
           <main>
@@ -176,15 +175,14 @@ async function handleRequest(request, env) {
     `;
 
     // Output response
-    if (response.ok) {
-//        return new Response(`${JSON.stringify(videos)}`, {
-//            headers: { 'Content-Type': 'application/json' }
-//        });
+    // The 'response' variable is not defined in your code
+    // Remove the if statement or define 'response'
+    //if (response.ok) {
         return new Response(html, {
             headers: { "content-type": "text/html;charset=UTF-8" },
         });
-    }
-     else {
-              console.error(`Error fetching list: ${JSON.stringify(videos)}`);
-    }
+    //}
+     //else {
+     //         console.error(`Error fetching list: ${JSON.stringify(videos)}`);
+    //}
 }
